@@ -47,6 +47,7 @@ The executables for each subproject will be generated in the bin folder in the p
 <br />
   `./<EXECUTABLE_NAME> 
   `
+Make sure your compiler supports C++20, else you won't be able to build the project.
 
 
 
