@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "../includes/Template.hpp"
+#include <concepts>
 
 using namespace testtemplate;
 
