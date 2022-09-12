@@ -11,29 +11,29 @@
 
 struct Renderer
 {
-  virtual string what_to_render_as() const = 0;
+  virtual std::string what_to_render_as() const = 0;
 };
 
 struct VectorRenderer : Renderer
 {
-    string what_to_render_as() const override {
+    std::string what_to_render_as() const override {
         return " as lines";
     }
 };
 
 struct RasterRenderer : Renderer
 {
-    string what_to_render_as() const override {
+    std::string what_to_render_as() const override {
         return " as pixels";
     }
 };
 
 struct Shape
 { 
-    unique_ptr<Renderer> _renderer;
-    string name;
+    std::unique_ptr<Renderer> _renderer;
+    std::string name;
     
-    virtual string str() const = 0;
+    virtual std::string str() const = 0;
 };
 
 template<typename T>
@@ -41,11 +41,11 @@ struct Triangle : Shape
 {
     Triangle() 
     {
-        this->_renderer = make_unique<T>();
+        this->_renderer = std::make_unique<T>();
         this->name = "Triangle";
     }
     
-    string str() const override {
+    std::string str() const override {
          return "Drawing " + this->name + this->_renderer->what_to_render_as();
     }
 };
@@ -56,10 +56,10 @@ struct Square : Shape
 {
     Square()
     {
-        this->_renderer = make_unique<T>();
+        this->_renderer = std::make_unique<T>();
         this->name = "Square";
     }
-    string str() const override {
+    std::string str() const override {
         return "Drawing " + this->name + this->_renderer->what_to_render_as();
     }
 };
