@@ -5,7 +5,7 @@
 #include <string>
 #include <memory>
 
-// add builder example
+// add bridge example
 // Draw triangle and square
 // can Render the shape, vector or raster renderer
 
@@ -75,7 +75,7 @@ int main() {
     Foo f(27);
     f.doTheThings();
 
-    // builder example
+    // bridge example
     std::cout << Square<RasterRenderer>().str();
 
     return 0;

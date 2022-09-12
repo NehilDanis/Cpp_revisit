@@ -5,7 +5,7 @@
 #include <memory>
 
 /*
-Pimple idiom(Pointer to implementation): manifestation of the builder pattern
+Pimple idiom(Pointer to implementation): manifestation of the bridge pattern
 it is used to hide the implementation details because
 you only ship the header to your customer. This way if you have some secret implementation 
 that you dont even want to show the function name in the private part of you class's header.

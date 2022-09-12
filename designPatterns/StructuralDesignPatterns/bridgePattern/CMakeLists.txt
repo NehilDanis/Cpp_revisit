@@ -1,4 +1,4 @@
-project(builderPattern)
+project(bridgePattern)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -13,6 +13,6 @@ set(SOURCES ${SOURCE_DIR}/main.cpp
             ${SOURCE_DIR}/Person.cpp
             ${SOURCE_DIR}/Foo.cpp)
 
-add_executable(builderPattern ${SOURCES} ${HEADER_FILES})
+add_executable(bridgePattern ${SOURCES} ${HEADER_FILES})
 
-install(TARGETS builderPattern RUNTIME DESTINATION bin)
+install(TARGETS bridgePattern RUNTIME DESTINATION bin)

@@ -1,4 +1,4 @@
-Builder Pattern
+bridge Pattern
 
 - structural design pattern
 - aims to connect components through an abstraction
@@ -6,4 +6,4 @@ Builder Pattern
 
 Say we want to have a thread scheduler class and the scheduler can be preemtive or cooperative. Also the scheduler can run on Unix or on Windows. Instead of creating the full inhertance relationship we can combine it with aggregation.
 
-So one of the aims of builder design pattern is to avoid state-space explosion.
+So one of the aims of bridge design pattern is to avoid state-space explosion.
