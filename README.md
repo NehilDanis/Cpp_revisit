@@ -1,9 +1,9 @@
 # C++ - Reviewing some content
 
-In this repo, some basic C++ concept is implemented. This repo is for me to revisit some of the concepts from Modern C++, to design patterns with C++. The examples in this repo is mostly from the Udemy courses [1](https://www.udemy.com/course/learn-advanced-c-programming/), [2](https://www.udemy.com/course/patterns-cplusplus/) that I have watched. I am also planning to add some example from day to day coding challanges.
+In this repo, some basic C++ concept is implemented. This repo is for me to revisit some of the concepts from Modern C++, to design patterns. The examples in this repo are mostly from the Udemy courses [1](https://www.udemy.com/course/learn-advanced-c-programming/), and [2](https://www.udemy.com/course/patterns-cplusplus/).
 
 # Usage
-The project structure is as shown below. There are multiple sub projects and each have their own CMakeLists. Each subproject will have their own executable.
+The project structure is as shown below.
 
 ```
 Project
@@ -47,7 +47,5 @@ The executables for each subproject will be generated in the bin folder in the p
 <br />
   `./<EXECUTABLE_NAME> 
   `
-Make sure your compiler supports C++20, else you won't be able to build the project.
-
 
 
