@@ -13,3 +13,4 @@ add_subdirectory(designPatterns/StructuralDesignPatterns/decoratorPattern)
 
 #behavioral design patterns
 add_subdirectory(designPatterns/BehavioralDesignPatterns/StrategyDesignPattern)
+add_subdirectory(designPatterns/BehavioralDesignPatterns/TemplateMethodDesignPattern)
